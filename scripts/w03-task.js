@@ -33,7 +33,7 @@
 
 
 /* Function Expression - Subtract Numbers */
-function subtract(number1, number2) {
+  function subtract(number1, number2) {
     return number1 - number2;
   }
 
@@ -45,8 +45,19 @@ function subtract(number1, number2) {
   
   document.querySelector('#subtractNumbers').addEventListener('click', subtractNumbers);
 
-
 /* Arrow Function - Multiply Numbers */
+function multiply(number1, number2) {
+    return number1 * number2;
+  }
+
+  function multiplyNumbers() {
+    let multiplyNumber1 = Number(document.querySelector('#factor1').value);
+    let multiplyNumber2 = Number(document.querySelector('#factor2').value);
+    document.querySelector('#product').value = multiply(multiplyNumber1, multiplyNumber2);
+  }
+
+  document.querySelector('#multiplyNumbers').addEventListener('click', multiplyNumbers);
+
 
 
 /* Open Function Use - Divide Numbers */
