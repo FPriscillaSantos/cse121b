@@ -116,3 +116,5 @@ document.querySelector('#multiplied').textContent = numbersArray.map(number => n
 
 /* Output Sum of Multiplied by 2 Array */
 document.querySelector('#sumOfMultiplied').textContent = numbersArray.map(number => number * 2).reduce((sum, number) => sum + number);
+
+//atualizaaa
