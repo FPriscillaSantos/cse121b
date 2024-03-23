@@ -15,9 +15,9 @@ let myProfile = {
     ],
 
     hobbies: [
-        'Watch K-dramas and Run BTS',
         'To read',
         'Listen to music',
+        'Watch K-drama',
         'To dance',
         'Play with my children'
     ],
@@ -49,11 +49,30 @@ image.setAttribute('src', myProfile.photo);
 image.setAttribute('alt', myProfile.name);
 
 /* Favorite Foods List*/
-
+myProfile.favoriteFood.forEach(food =>
+    {
+        let li = document.createElement('li');
+        li.textContent = food;
+        document.querySelector('#favorite-foods').appendChild(li);
+    });
 
 /* Hobbies List */
-
+myProfile.hobbies.forEach(hobby =>
+    {
+        let li = document.createElement('li');
+        li.textContent = hobby;
+        document.querySelector('#hobbies').appendChild(li);
+    });
 
 /* Places Lived DataList */
-
+let placesList = document.querySelector('#places-lived');
+myProfile.placesLived.forEach(place => {
+    let dt = document.createElement('dt');
+    dt.textContent = place.place;
+    placesList.appendChild(dt);
+    
+    let dd = document.createElement('dd');
+    dd.textContent = place.length;
+    placesList.appendChild(dd);
+});
 
