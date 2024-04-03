@@ -67,3 +67,5 @@ document.querySelector("#filtered").addEventListener("change", () => { filterTem
 
 
 getTemples();
+
+/*done2*/
