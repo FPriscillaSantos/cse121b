@@ -1,0 +1,7 @@
+Weather forecast
+
+-The page will connect with the OpenWeather API which is public
+
+-Thus, when the user enters a location in the search field, a request will be made to the API, which will return the weather data.
+
+-The execution will be very similar to the temple filter.

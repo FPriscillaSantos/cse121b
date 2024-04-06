@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <title>Dev Previsão</title>
+</head>
+
+<body>
+    <nav>
+        <ul id="menu">
+          <li><a id="toggleMenu">&equiv;</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="w01-task.html">W1 Task</a></li>
+          <li><a href="w03-task.html">W3 Task</a></li>
+          <li><a href="w04-task.html">W4 Task</a></li>
+          <li><a href="w05-task.html" class="active">W5 Task</a></li>
+          <li><a href="project.html">Project</a></li>
+        </ul>
+      </nav>
+    <div class="caixa-maior">
+
+        <input class="input-city" placeholder="Enter the city name">
+        <button onclick="clickOnButton()">
+            <img class="lupa" src="https://www.svgrepo.com/show/488200/find.svg">
+        </button>
+
+        <div class="caixa-media">
+            <h2 class="city">Weather in Rio de Janeiro</h2>
+            <p class="temp">28°C</p>
+
+            <div class="caixa-menor">
+                <img class="icon" src="https://openweathermap.org/img/wn/04n.png">
+                <p class="description">Scattered Clouds</p>
+            </div>
+
+            <p class="humidity">Humidity: 70%</p>
+        </div>
+
+    </div>
+
+    <footer>©2024 | Project | CSE 121bF</a></footer>
+
+    <script src="project.js"></script>
+</body>
+
+</html>
